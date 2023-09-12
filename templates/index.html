@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PDF to Text Converter</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/style.css') }}">
+</head>
+<body>
+    <h1>PDF to Text Converter</h1>
+    <form id="pdfForm" enctype="multipart/form-data" action="/convert" method="post">
+        <input type="file" name="file" id="pdfFile" accept=".pdf" required>
+        <button type="submit">Convert</button>
+    </form>
+</body>
+</form>
+<div id="result"></div>
+<a id="downloadLink" style="display: none;" download="output.txt">Download Text</a>
+
+<script src="script.js"></script>
+</body>
+</html>
